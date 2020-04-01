@@ -33,7 +33,7 @@ button {
   border: 0;
   background:black  ;
   text-shadow: 1px 1px 1px grey;
-  border: 1px solid rgba(153, 153, 153, 0.589);
+  border: 1px solid rgba(153, 153, 153, 0.6);
   position: absolute;
   cursor: pointer;
   top: 2px;
