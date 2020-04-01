@@ -1,7 +1,7 @@
 const mainpic = document.querySelector('.displayed-img');
-const bar = document.querySelector('.thumb-bar');
+const thumbBar = document.querySelector('.thumb-bar');
 
-const bttn = document.querySelector('button');
+const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 for(let i = 1; i <= 5; i++) {
