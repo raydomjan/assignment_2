@@ -4,27 +4,50 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-for(let i = 1; i <= 5; i++) {
-    const newImage = document.createElement('displayed-img');
-    newImage.setAttribute('src', 'pics' + i + '.jpg');
-    thumbBar.appendChild(newImage);
 
-    newImage.onclick = function(n) {
-        displayedImage.src = n.target.src;
-    }
+
+function picloop() {
+
+for (i = 0; i < 5; i++) {
+    var x = "images/pic" + i + "jpg";
+    const newImage = document.createElement('full-img');
+    newImage.setAttribute('src', x);
+    bar.appendChild(newImage);
+    
+       
+
+    
+}
 }
 
-btn.onclick =function() {
+picloop();
+
+bar.addEventListener('click', (x) => {
+    if(x.target && x.target.nodeName == "IMG") {
+      mainpic.src = x.target.src;
+  }
+})
+
+
+
+
+
+
+
+
+
+
+btn.onclick = function() {
     const btnClass = btn.getAttribute('class');
-    if (btnClass === 'shade') {
+    if (btnClass === 'dark') {
         btn.setAttribute('class','light');
         btn.textContent = 'Lighten';
-        overlay.getElementsByClassName.backgroundColor = "rgba(0,0,0,0.5)"
+        overlay.style.backgroundColor = "rgba(0,0,0,0.5)"
     }
     else{
-        btn.setAttribute('class', 'shade');
+        btn.setAttribute('class', 'dark');
         btn.textContent = 'Darken';
-        overlay.getElementsByClassName.backgroundColor ='rgba(0,0,0,0)'
+        overlay.style.backgroundColor ='rgba(0,0,0,0)'
     }
 }
 

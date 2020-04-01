@@ -31,7 +31,7 @@ body {
   
 button {
   border: 0;
-  background: rgba(150, 150, 150, 0.185) ;
+  background:black  ;
   text-shadow: 1px 1px 1px grey;
   border: 1px solid rgba(153, 153, 153, 0.589);
   position: absolute;
@@ -44,5 +44,5 @@ button {
   display: block;
   width: 20%;
   cursor: pointer;
-  float: right;
+  float: left;
 }
