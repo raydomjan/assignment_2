@@ -5,7 +5,7 @@ const bttn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 for(let i = 1; i <= 5; i++) {
-    const newImage = document.createElement('full-img');
+    const newImage = document.createElement('displayed-img');
     newImage.setAttribute('src', 'pics' + i + '.jpg');
     thumbBar.appendChild(newImage);
 
