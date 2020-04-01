@@ -6,22 +6,27 @@ const overlay = document.querySelector('.overlay');
 
 
 
-btn.onclick = function() {
+function picloop() {
 
-for (i = 0; i < 6; i++) {
-    var pict = i
-    var x = "images/pic" + image + "jpg";
+for (i = 0; i < 5; i++) {
+    var x = "images/pic" + i + "jpg";
     const newImage = document.createElement('full-img');
     newImage.setAttribute('src', x);
     bar.appendChild(newImage);
-    newImage.onclick = function(e) {
-        displayedImage.src = e.target.src;
+    
        
 
-    }
+    
 }
 }
 
+picloop();
+
+bar.addEventListener('click', (x) => {
+    if(x.target && x.target.nodeName == "IMG") {
+      mainpic.src = x.target.src;
+  }
+})
 
 
 
