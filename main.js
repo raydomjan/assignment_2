@@ -20,11 +20,14 @@ for (i = 0; i < 5; i++) {
 
 picloop();
 
+/*Found online at */
+
 bar.addEventListener('click', (x) => {
     if(x.target && x.target.nodeName == "IMG") {
       mainpic.src = x.target.src;
   }
 })
+
 
 
 
