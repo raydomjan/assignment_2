@@ -8,7 +8,7 @@ const shade = document.querySelector('.shade');
 
 function picloop() {
 
-for (i = 0; i < 5; i++) {
+for(let i = 0; i <25; i++){
     var x = "images/pic" + i + "jpg";
     const newImage = document.createElement('full-img');
     newImage.setAttribute('src', x);
@@ -20,7 +20,7 @@ for (i = 0; i < 5; i++) {
 
 picloop();
 
-/*Found online at */
+
 
 bar.addEventListener('click', (x) => {
     if(x.target && x.target.nodeName == "IMG") {
