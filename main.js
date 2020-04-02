@@ -2,7 +2,7 @@ const mainpic = document.querySelector('.displayed-img');
 const bar = document.querySelector('.thumb-bar');
 
 const btn = document.querySelector('button');
-const overlay = document.querySelector('.overlay');
+const shade = document.querySelector('.shade');
 
 
 
@@ -37,11 +37,11 @@ btn.onclick = function() {
     if (btnClass === 'dark') {
         btn.setAttribute('class','light');
         btn.textContent = 'Lighten';
-        overlay.style.backgroundColor = "rgba(0,0,0,0.5)"
+        shade.style.backgroundColor = "rgba(0,0,0,0.5)"
     }
     else{
         btn.setAttribute('class', 'dark');
         btn.textContent = 'Darken';
-        overlay.style.backgroundColor ='rgba(0,0,0,0)'
+        shade.style.backgroundColor ='rgba(0,0,0,0)'
     }
 }
