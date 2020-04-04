@@ -13,8 +13,6 @@ for (i = 0; i < 5; i++) {
     const newImage = document.createElement('full-img');
     newImage.setAttribute('src', x);
     bar.appendChild(newImage);
-
-    
 }
 }
 
